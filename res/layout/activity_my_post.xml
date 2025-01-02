@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".AddPostActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_post_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="My Post"
+        app:titleMarginStart="150dp"
+        android:background="@drawable/custom_toolbar_background"
+        app:titleTextColor="@color/colorSecondary"
+        android:elevation="4dp" />
+
+    <ListView
+        android:id="@+id/my_post_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="8dp" />
+
+</LinearLayout>

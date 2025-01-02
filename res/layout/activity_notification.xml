@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".AddPostActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/notification_toolbar"
+        android:layout_width="match_parent"
+        app:title="Notification"
+        app:titleTextColor="@color/colorSecondary"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_toolbar_background"
+        android:elevation="4dp"
+        android:title="Notifications" />
+
+    <LinearLayout
+        android:id="@+id/notification_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notification_toolbar"
+        android:gravity="center_horizontal">
+
+        <ProgressBar
+            android:id="@+id/notification_progress_bar"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/colorError"
+            android:max="100"
+            android:progress="50"
+            android:progressTint="@color/colorSuccess"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_below="@+id/notification_linear_layout"
+        android:id="@+id/notification_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="8dp" />
+</RelativeLayout>

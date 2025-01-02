@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/user_profile"
+        android:icon="@drawable/ic_profile"
+        android:orderInCategory="101"
+        android:title="Profile"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/user_notification"
+        android:icon="@drawable/ic_notification"
+        android:orderInCategory="103"
+        android:title="Notification"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/user_settings"
+        android:icon="@drawable/setting_icon"
+        android:orderInCategory="104"
+        android:title="Setting"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/add_posts"
+        android:icon="@drawable/ic_post"
+        android:orderInCategory="102"
+        android:title="My Post"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/refresh"
+        android:title="Refresh" />
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout" />
+
+</menu>
